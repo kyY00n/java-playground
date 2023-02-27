@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a0f21f9-98cc-4ac4-91ca-336191097c26" name="Changes" comment="해시코드">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="3a0f21f9-98cc-4ac4-91ca-336191097c26" name="Changes" comment="reduce를 이용해서 최댓값을 게산할 수도 있다.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,8 +82,8 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.HashcodeTest.printReference">
-    <configuration name="HashcodeTest.printReference" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.StreamTest.모든_거래자의_이름을_알파벳순으로_정렬해서_반환">
+    <configuration name="StreamTest.전체_트랜잭션_중_최댓값은_얼마인가" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -97,7 +96,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;study.HashcodeTest.printReference&quot;" />
+            <option value="&quot;study.StreamTest.전체_트랜잭션_중_최댓값은_얼마인가&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -107,31 +106,103 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="java-playground [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StreamTest.전체_트랜잭션_중_최솟값은_얼마인가" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;study.StreamTest.전체_트랜잭션_중_최솟값은_얼마인가&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="StreamTest.모든_거래자의_이름을_알파벳순으로_정렬해서_반환" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;study.StreamTest.모든_거래자의_이름을_알파벳순으로_정렬해서_반환&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="StreamTest.케임브리지에_거주하는_거래자의_모든_트랜잭션값을_출력" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;study.StreamTest.케임브리지에_거주하는_거래자의_모든_트랜잭션값을_출력&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="StreamTest.케임브리지에서_근무하는_모든_거래자를_찾아서_이름순으로_정렬" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;study.StreamTest.케임브리지에서_근무하는_모든_거래자를_찾아서_이름순으로_정렬&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.HashcodeTest.printReference" />
-        <item itemvalue="Gradle.java-playground [build]" />
+        <item itemvalue="Gradle.StreamTest.전체_트랜잭션_중_최댓값은_얼마인가" />
+        <item itemvalue="Gradle.StreamTest.모든_거래자의_이름을_알파벳순으로_정렬해서_반환" />
+        <item itemvalue="Gradle.StreamTest.케임브리지에서_근무하는_모든_거래자를_찾아서_이름순으로_정렬" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +215,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677407867546</updated>
       <workItem from="1677407869094" duration="3016000" />
-      <workItem from="1677498767597" duration="312000" />
+      <workItem from="1677498767597" duration="2693000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1677498799394</created>
@@ -160,15 +231,49 @@
       <option name="project" value="LOCAL" />
       <updated>1677498810044</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[모던 자바 인 액션] 5장. 스트림 활용">
+      <created>1677500920502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677500920502</updated>
+    </task>
+    <task id="LOCAL-00004" summary="reduce를 이용해서 최댓값을 게산할 수도 있다.">
+      <created>1677501144626</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677501144626</updated>
+    </task>
+    <task id="LOCAL-00005" summary="reduce를 이용해서 최댓값을 게산할 수도 있다.">
+      <created>1677501157907</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677501157907</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="해시코드" />
-    <option name="LAST_COMMIT_MESSAGE" value="해시코드" />
+    <MESSAGE value="[모던 자바 인 액션] 5장. 스트림 활용" />
+    <MESSAGE value="reduce를 이용해서 최댓값을 게산할 수도 있다." />
+    <option name="LAST_COMMIT_MESSAGE" value="reduce를 이용해서 최댓값을 게산할 수도 있다." />
   </component>
 </project>

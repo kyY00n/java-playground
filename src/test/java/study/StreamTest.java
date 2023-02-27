@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import modernjavainaction.Trader;
@@ -27,13 +28,14 @@ public class StreamTest {
 
     @Test
     void _2011에_일어난_트랜잭션을_찾아_오름차순으로_정렬() {
-        List<Integer> result = transactions.stream().filter(transaction -> transaction.getYear() == 2011).map(Transaction::getValue).sorted()
+        List<Integer> result = transactions.stream().filter(transaction -> transaction.getYear() == 2011)
+                .map(Transaction::getValue).sorted()
                 .collect(Collectors.toList());
         result.forEach(System.out::println);
     }
 
     @Test
-    void 거래자가_근무하는_모든_도시를_중복_없이_나열()  {
+    void 거래자가_근무하는_모든_도시를_중복_없이_나열() {
         List<Trader> traders = List.of(raoul, mario, alan, brian);
         Stream<String> distinctCity = traders.stream().map(Trader::getCity).distinct(); // collect 시 toSet()으로 할 수 있겠당.
         distinctCity.forEach(System.out::println);
@@ -79,5 +81,19 @@ public class StreamTest {
     void 전체_트랜잭션_중_최솟값은_얼마인가() {
         Transaction min = transactions.stream().min(Comparator.comparingInt(Transaction::getValue)).orElseThrow();
         System.out.println(min.getValue());
+    }
+
+    @Test
+    void 무한_스트림은_정렬하거나_리듀스할_수_없다() {
+        Optional<Double> max = Stream.generate(Math::random)
+                .limit(5)
+                .reduce(Double::max);
+        // 되는디요
+
+        Stream.iterate(0, n -> n + 2)
+                .limit(6)
+                .forEach(System.out::println);
+
+
     }
 }
