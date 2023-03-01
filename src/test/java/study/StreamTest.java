@@ -1,11 +1,15 @@
 package study;
 
+import static java.util.stream.Collectors.groupingBy;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import modernjavainaction.Trader;
 import modernjavainaction.Transaction;
@@ -102,5 +106,22 @@ public class StreamTest {
         Stream.generate(Math::random)
                 .map(i -> 1)
                 .forEach(System.out::println); // 안 멈춘다.. 컴퓨터가 게속 1을 토한다..
+    }
+
+    @Test
+    void 무한스트림에_필터를걸면_종료가_될까() {
+        IntStream.iterate(0, n -> n + 4)
+                .filter(n -> n < 100)
+                .forEach(System.out::println);
+    }
+
+    @Test
+    void groupBy로_collect_해보자() {
+        Map<Trader, List<Transaction>> collect = transactions.stream().collect(groupingBy(Transaction::getTrader));
+        collect.forEach((trader, transaction) -> {
+            System.out.println(trader);
+            transaction.forEach(System.out::println);
+            System.out.println();
+        });
     }
 }
