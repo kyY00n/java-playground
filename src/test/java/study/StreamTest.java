@@ -96,4 +96,11 @@ public class StreamTest {
 
 
     }
+
+    @Test
+    void 무한스트림에서_가능한_중간연산() {
+        Stream.generate(Math::random)
+                .map(i -> 1)
+                .forEach(System.out::println); // 안 멈춘다.. 컴퓨터가 게속 1을 토한다..
+    }
 }
