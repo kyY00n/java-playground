@@ -1,13 +1,20 @@
 package study;
 
 import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.partitioningBy;
+import static java.util.stream.Collectors.toSet;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
+import java.util.Set;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.RecursiveTask;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -123,5 +130,94 @@ public class StreamTest {
             transaction.forEach(System.out::println);
             System.out.println();
         });
+    }
+
+    @Test
+    void 리듀스테스트() {
+        Stream<Integer> stream = Stream.of(1, 2, 3, 4, 5, 6);
+        List<Integer> numbers = stream.reduce(
+                new ArrayList<Integer>(),
+                (List<Integer> list, Integer e) -> {
+                    list.add(e);
+                    return list;
+                },
+                (List<Integer> list1, List<Integer> list2) -> {
+                    list1.addAll(list2);
+                    return list1;
+                }
+        );
+
+        numbers.forEach(System.out::println);
+    }
+
+    class Dish {
+        private String type;
+        private String name;
+
+        public Dish(String name, String type) {
+            this.name = name;
+            this.type = type;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public String getType() {
+            return type;
+        }
+    }
+
+    @Test
+    void flatMapping() {
+        //given
+        List<Dish> menu = List.of(new Dish("beef", "hihi"), new Dish("pork", "byebye"));
+        Map<String, List<String>> dishTags = new HashMap<>();
+        dishTags.put("pork", List.of("greasy", "salty"));
+        dishTags.put("beef", List.of("salty", "roasted"));
+        //when
+//        menu.stream().map((hi) -> "hi").collect(groupingBy(Dish::getName,
+//                Collectors.flatMapping((Dish dish) -> dishTags.get(dish.getName()).stream(), toSet())));
+
+    }
+
+    public Map<Boolean, List<Integer>> partitionPrimes(int n) {
+        return IntStream.rangeClosed(2, n).boxed()
+                .collect(partitioningBy(candidate -> isPrime(candidate)));
+    }
+
+    public boolean isPrime(int candidate) {
+        int candidateRoot = (int) Math.sqrt((double) candidate);
+        return IntStream.rangeClosed(2, candidateRoot)
+                .noneMatch(i -> candidate % i == 0);
+    }
+
+    @Test
+    void recursiveTask() {
+        class Fibonacci extends RecursiveTask<Integer> {
+            final int n;
+
+            Fibonacci(int n) {
+                this.n = n;
+            }
+
+            protected Integer compute() {
+                if (n <= 1) {
+                    return n;
+                }
+                Fibonacci f1 = new Fibonacci(n - 1);
+                f1.fork();
+                Fibonacci f2 = new Fibonacci(n - 2);
+                return f2.compute() + f1.join();
+            }
+        }
+
+        int result = new ForkJoinPool().invoke(new Fibonacci(12));
+
+        System.out.println(result);
+    }
+
+    @Test
+    void arrayAsList() {
     }
 }

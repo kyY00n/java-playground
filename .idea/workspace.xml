@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a0f21f9-98cc-4ac4-91ca-336191097c26" name="Changes" comment="reduce를 이용해서 최댓값을 게산할 수도 있다.">
+    <list default="true" id="3a0f21f9-98cc-4ac4-91ca-336191097c26" name="Changes" comment="Collectors.groupingBy 학습테스트">
+      <change afterPath="$PROJECT_DIR$/src/main/java/modernjavainaction/ToListCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/study/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/study/StreamTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="164b3372b6effce704c40c48975a52f629a98381" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/corretto-11.0.18/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/corretto-11.0.18/Contents/Home/lib/src.zip!/java.base/java/util/stream/DistinctOps.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/corretto-11.0.18/Contents/Home/lib/src.zip!/java.base/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -76,14 +86,15 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.51724136&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.StreamTest.모든_거래자의_이름을_알파벳순으로_정렬해서_반환">
-    <configuration name="StreamTest.전체_트랜잭션_중_최댓값은_얼마인가" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.StreamTest.flatMapping">
+    <configuration name="StreamTest.리듀스테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -96,7 +107,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;study.StreamTest.전체_트랜잭션_중_최댓값은_얼마인가&quot;" />
+            <option value="&quot;study.StreamTest.리듀스테스트&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="StreamTest.무한스트림에서_가능한_중간연산" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;study.StreamTest.무한스트림에서_가능한_중간연산&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="StreamTest.무한스트림에_필터를걸면_종료가_될까" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;study.StreamTest.무한스트림에_필터를걸면_종료가_될까&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -129,7 +186,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StreamTest.모든_거래자의_이름을_알파벳순으로_정렬해서_반환" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StreamTest.무한_스트림은_정렬하거나_리듀스할_수_없다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -142,7 +199,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;study.StreamTest.모든_거래자의_이름을_알파벳순으로_정렬해서_반환&quot;" />
+            <option value="&quot;study.StreamTest.무한_스트림은_정렬하거나_리듀스할_수_없다&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,7 +232,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StreamTest.케임브리지에서_근무하는_모든_거래자를_찾아서_이름순으로_정렬" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StreamTest.flatMapping" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -188,7 +245,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;study.StreamTest.케임브리지에서_근무하는_모든_거래자를_찾아서_이름순으로_정렬&quot;" />
+            <option value="&quot;study.StreamTest.flatMapping&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="StreamTest.groupBy로_collect_해보자" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;study.StreamTest.groupBy로_collect_해보자&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -200,9 +280,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.StreamTest.전체_트랜잭션_중_최댓값은_얼마인가" />
-        <item itemvalue="Gradle.StreamTest.모든_거래자의_이름을_알파벳순으로_정렬해서_반환" />
-        <item itemvalue="Gradle.StreamTest.케임브리지에서_근무하는_모든_거래자를_찾아서_이름순으로_정렬" />
+        <item itemvalue="Gradle.StreamTest.flatMapping" />
+        <item itemvalue="Gradle.StreamTest.리듀스테스트" />
+        <item itemvalue="Gradle.StreamTest.groupBy로_collect_해보자" />
+        <item itemvalue="Gradle.StreamTest.무한스트림에_필터를걸면_종료가_될까" />
+        <item itemvalue="Gradle.StreamTest.무한스트림에서_가능한_중간연산" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +297,9 @@
       <option name="presentableId" value="Default" />
       <updated>1677407867546</updated>
       <workItem from="1677407869094" duration="3016000" />
-      <workItem from="1677498767597" duration="2693000" />
+      <workItem from="1677498767597" duration="7180000" />
+      <workItem from="1677665871285" duration="11484000" />
+      <workItem from="1677835176020" duration="2235000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1677498799394</created>
@@ -252,7 +336,28 @@
       <option name="project" value="LOCAL" />
       <updated>1677501157907</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="무한스트림도 limit을 주면 정렬하거나 리듀스할 수 있다.">
+      <created>1677503189577</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677503189577</updated>
+    </task>
+    <task id="LOCAL-00007" summary="무한스트림은 short circuit api를 사용하지 않으면 정말 계속 토한다.">
+      <created>1677667505717</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677667505717</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Collectors.groupingBy 학습테스트">
+      <created>1677675611869</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677675611869</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +379,9 @@
     <MESSAGE value="해시코드" />
     <MESSAGE value="[모던 자바 인 액션] 5장. 스트림 활용" />
     <MESSAGE value="reduce를 이용해서 최댓값을 게산할 수도 있다." />
-    <option name="LAST_COMMIT_MESSAGE" value="reduce를 이용해서 최댓값을 게산할 수도 있다." />
+    <MESSAGE value="무한스트림도 limit을 주면 정렬하거나 리듀스할 수 있다." />
+    <MESSAGE value="무한스트림은 short circuit api를 사용하지 않으면 정말 계속 토한다." />
+    <MESSAGE value="Collectors.groupingBy 학습테스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="Collectors.groupingBy 학습테스트" />
   </component>
 </project>
