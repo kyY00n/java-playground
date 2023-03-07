@@ -20,6 +20,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import modernjavainaction.Trader;
 import modernjavainaction.Transaction;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 public class StreamTest {
@@ -219,5 +220,26 @@ public class StreamTest {
 
     @Test
     void arrayAsList() {
+    }
+
+    interface Task {
+        void execute();
+    }
+
+    public static void doSomething(Runnable r) {
+        r.run();
+    }
+
+    public static void doSomething(Task t) {
+        t.execute();
+    }
+
+    @Nested
+    class Intellij {
+        @Test
+        void lambdaIntellij() {
+            doSomething((Task) ()-> System.out.println("hihi"));
+        }
+
     }
 }
