@@ -242,4 +242,13 @@ public class StreamTest {
         }
 
     }
+
+    @Test
+    public void debugging() {
+
+        List<String> texts = Arrays.asList(" ", null);
+        texts.stream()
+                .filter(String::isBlank)
+                .forEach(System.out::println);
+    }
 }
