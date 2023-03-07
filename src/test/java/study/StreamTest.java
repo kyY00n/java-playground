@@ -238,7 +238,7 @@ public class StreamTest {
     class Intellij {
         @Test
         void lambdaIntellij() {
-            doSomething((Task) ()-> System.out.println("hihi"));
+            doSomething((Task) () -> System.out.println("hihi"));
         }
 
     }
@@ -250,5 +250,14 @@ public class StreamTest {
         texts.stream()
                 .filter(String::isBlank)
                 .forEach(System.out::println);
+    }
+
+    @Test
+    void peek() {
+        Stream.of("one", "two", "three", "four")
+                .filter(e -> e.length() > 3)
+                .peek(e -> System.out.println("Filtered value: " + e))
+                .map(String::toUpperCase)
+                .peek(e -> System.out.println("Mapped value: " + e)).collect(Collectors.toList());
     }
 }
