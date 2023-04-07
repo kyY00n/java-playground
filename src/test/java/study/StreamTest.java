@@ -260,4 +260,8 @@ public class StreamTest {
                 .map(String::toUpperCase)
                 .peek(e -> System.out.println("Mapped value: " + e)).collect(Collectors.toList());
     }
+
+    void listOf() {
+        List.of();
+    }
 }
