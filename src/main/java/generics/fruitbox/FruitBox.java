@@ -12,4 +12,8 @@ public class FruitBox<T extends Fruit> {
     public void add(T fruit) {
         fruits.add(fruit);
     }
+
+    public ArrayList<T> getList() {
+        return fruits;
+    }
 }
