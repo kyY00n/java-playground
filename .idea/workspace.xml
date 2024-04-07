@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a0f21f9-98cc-4ac4-91ca-336191097c26" name="Changes" comment="RecursiveTask 피보나치">
-      <change beforePath="$PROJECT_DIR$/src/test/java/study/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/study/StreamTest.java" afterDir="false" />
+    <list default="true" id="3a0f21f9-98cc-4ac4-91ca-336191097c26" name="Changes" comment="study: 동기화 대안 - 변수에 volatile 키워드 사용">
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/networksecurity/1MillionPassword_hashed.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/networksecurity/1MillionPassword_wordlist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/networksecurity/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/networksecurity/PasswordCracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/networksecurity/SaltFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/thread/ForwardingSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/1MillionPassword_hashed.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/1MillionPassword_wordlist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +42,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="java-playground" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java-playground" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -51,6 +54,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -79,11 +83,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/oieuoa/dev/playground/java-playground/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.51724136",
@@ -91,8 +100,62 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.StreamTest.recursiveTask">
-    <configuration name="StreamTest.리듀스테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/networksecurity" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/networksecurity" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="thread" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SaltFinder">
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.MergeSort" />
+      <module name="java-playground.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordCracker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="networksecurity.PasswordCracker" />
+      <module name="java-playground.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="networksecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaltFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="networksecurity.SaltFinder" />
+      <module name="java-playground.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="networksecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronizedStopThreadTest.스레드가_멈추고_테스트가_끝난다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -105,7 +168,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;study.StreamTest.리듀스테스트&quot;" />
+            <option value="&quot;thread.SynchronizedStopThreadTest.스레드가_멈추고_테스트가_끝난다&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -115,7 +178,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StreamTest.무한스트림에_필터를걸면_종료가_될까" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="VolatileStopThreadTest.stopThread" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -128,99 +191,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;study.StreamTest.무한스트림에_필터를걸면_종료가_될까&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="StreamTest.케임브리지에_거주하는_거래자의_모든_트랜잭션값을_출력" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;study.StreamTest.케임브리지에_거주하는_거래자의_모든_트랜잭션값을_출력&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="StreamTest.flatMapping" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;study.StreamTest.flatMapping&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="StreamTest.groupBy로_collect_해보자" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;study.StreamTest.groupBy로_collect_해보자&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="StreamTest.recursiveTask" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;study.StreamTest.recursiveTask&quot;" />
+            <option value="&quot;thread.VolatileStopThreadTest.stopThread&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -232,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.StreamTest.recursiveTask" />
-        <item itemvalue="Gradle.StreamTest.flatMapping" />
-        <item itemvalue="Gradle.StreamTest.리듀스테스트" />
-        <item itemvalue="Gradle.StreamTest.groupBy로_collect_해보자" />
-        <item itemvalue="Gradle.StreamTest.무한스트림에_필터를걸면_종료가_될까" />
+        <item itemvalue="Application.PasswordCracker" />
+        <item itemvalue="Application.SaltFinder" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Gradle.VolatileStopThreadTest.stopThread" />
+        <item itemvalue="Gradle.SynchronizedStopThreadTest.스레드가_멈추고_테스트가_끝난다" />
       </list>
     </recent_temporary>
   </component>
@@ -253,6 +224,10 @@
       <workItem from="1677665871285" duration="11484000" />
       <workItem from="1677835176020" duration="2235000" />
       <workItem from="1678084942655" duration="4149000" />
+      <workItem from="1694853528237" duration="597000" />
+      <workItem from="1706316353474" duration="6034000" />
+      <workItem from="1707135560557" duration="7000" />
+      <workItem from="1710053394108" duration="15102000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1677498799394</created>
@@ -317,7 +292,35 @@
       <option name="project" value="LOCAL" />
       <updated>1678089332664</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="wip">
+      <created>1694673693531</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694673693531</updated>
+    </task>
+    <task id="LOCAL-00011" summary="study: 스레드 동시성이 보장되지 않는 경우">
+      <created>1694674586855</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694674586855</updated>
+    </task>
+    <task id="LOCAL-00012" summary="study: 동기화해서 접근하는 경우">
+      <created>1694674878628</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694674878628</updated>
+    </task>
+    <task id="LOCAL-00013" summary="study: 동기화 대안 - 변수에 volatile 키워드 사용">
+      <created>1694677247003</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1694677247003</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +346,14 @@
     <MESSAGE value="무한스트림은 short circuit api를 사용하지 않으면 정말 계속 토한다." />
     <MESSAGE value="Collectors.groupingBy 학습테스트" />
     <MESSAGE value="RecursiveTask 피보나치" />
-    <option name="LAST_COMMIT_MESSAGE" value="RecursiveTask 피보나치" />
+    <MESSAGE value="wip" />
+    <MESSAGE value="study: 스레드 동시성이 보장되지 않는 경우" />
+    <MESSAGE value="study: 동기화해서 접근하는 경우" />
+    <MESSAGE value="study: 동기화 대안 - 변수에 volatile 키워드 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="study: 동기화 대안 - 변수에 volatile 키워드 사용" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
