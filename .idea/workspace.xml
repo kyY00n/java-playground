@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a0f21f9-98cc-4ac4-91ca-336191097c26" name="Changes" comment="study: 동기화 대안 - 변수에 volatile 키워드 사용">
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/networksecurity/1MillionPassword_hashed.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/networksecurity/1MillionPassword_wordlist.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/networksecurity/MD5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/networksecurity/PasswordCracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/networksecurity/SaltFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thread/ForwardingSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/1MillionPassword_hashed.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/1MillionPassword_wordlist.txt" afterDir="false" />
+    <list default="true" id="3a0f21f9-98cc-4ac4-91ca-336191097c26" name="Changes" comment="chore: network security">
+      <change afterPath="$PROJECT_DIR$/src/main/java/appetizer/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interviewscheduler/Applicant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interviewscheduler/Recruitment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interviewscheduler/TimeSlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/appetizer/CalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/interviewscheduler/ApplicantTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/interviewscheduler/RecruitmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/interviewscheduler/TimeSlotTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/study/StringTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -79,27 +80,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/oieuoa/dev/playground/java-playground/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.51724136",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oieuoa/dev/playground/java-playground/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.51724136&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -112,16 +113,18 @@
       <recent name="$PROJECT_DIR$/src/main/java/networksecurity" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="interviewscheduler" />
+      <recent name="appetizer" />
       <recent name="thread" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SaltFinder">
-    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.MergeSort" />
+  <component name="RunManager" selected="Gradle.CalculatorTest">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="appetizer.Calculator" />
       <module name="java-playground.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithm.*" />
+          <option name="PATTERN" value="appetizer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,7 +158,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronizedStopThreadTest.스레드가_멈추고_테스트가_끝난다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -168,7 +171,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;thread.SynchronizedStopThreadTest.스레드가_멈추고_테스트가_끝난다&quot;" />
+            <option value="&quot;appetizer.CalculatorTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -178,7 +181,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="VolatileStopThreadTest.stopThread" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculatorTest.덧셈" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -191,7 +194,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;thread.VolatileStopThreadTest.stopThread&quot;" />
+            <option value="&quot;appetizer.CalculatorTest.덧셈&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -203,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CalculatorTest" />
+        <item itemvalue="Gradle.CalculatorTest.덧셈" />
+        <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.PasswordCracker" />
         <item itemvalue="Application.SaltFinder" />
-        <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Gradle.VolatileStopThreadTest.stopThread" />
-        <item itemvalue="Gradle.SynchronizedStopThreadTest.스레드가_멈추고_테스트가_끝난다" />
       </list>
     </recent_temporary>
   </component>
@@ -228,6 +231,9 @@
       <workItem from="1706316353474" duration="6034000" />
       <workItem from="1707135560557" duration="7000" />
       <workItem from="1710053394108" duration="15102000" />
+      <workItem from="1712454056310" duration="1779000" />
+      <workItem from="1712462201182" duration="1363000" />
+      <workItem from="1712991400664" duration="2392000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1677498799394</created>
@@ -320,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694677247003</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="chore: network security">
+      <created>1712454556577</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712454556577</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +363,8 @@
     <MESSAGE value="study: 스레드 동시성이 보장되지 않는 경우" />
     <MESSAGE value="study: 동기화해서 접근하는 경우" />
     <MESSAGE value="study: 동기화 대안 - 변수에 volatile 키워드 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="study: 동기화 대안 - 변수에 volatile 키워드 사용" />
+    <MESSAGE value="chore: network security" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: network security" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
