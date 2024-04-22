@@ -14,6 +14,12 @@ public class Applicant {
         this.isAccepted = isAccepted;
     }
 
+    public Applicant(final String email, final List<TimeSlot> selected) {
+        this.email = email;
+        this.selected = selected;
+        this.isAccepted = false;
+    }
+
     public String getEmail() {
         return email;
     }
