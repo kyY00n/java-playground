@@ -39,4 +39,8 @@ public class Candidate {
                 '}';
     }
 
+    public boolean canInterviewAt(final TimeSlot timeslot) {
+        return available.contains(timeslot);
+    }
+
 }

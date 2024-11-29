@@ -12,8 +12,8 @@ public class Recruitment {
         this.interviewAvailable = interviewAvailable;
     }
     public Schedule schedule() {
-        Scheduler scheduler = new Scheduler();
-        return scheduler.execute(interviewAvailable, candidates);
+        Scheduler scheduler = new Scheduler(interviewAvailable, candidates);
+        return scheduler.execute();
     }
 
 }
